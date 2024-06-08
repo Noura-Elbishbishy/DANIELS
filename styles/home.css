@@ -42,6 +42,7 @@ i {
   cursor: pointer;
 }
 /* home stylings */
+
 #home {
   height: 100vh;
   position: relative;
@@ -74,6 +75,11 @@ i {
   content: '';
   animation: type 5s infinite ease-in-out;
 }
+@media (max-width: 767px) {
+  #home{
+    height: 80vh;
+    width: 100%;
+  }}
 @keyframes type {
   0% {
       content: 'De|';
@@ -155,6 +161,12 @@ i {
     top: 25%;
     left: -50px;
     z-index: 1;
+  }
+   @media (max-width: 767px) {
+    .image::before{
+      width: 270px;
+      height: 290px;
+    }
   }
   .letterspacing{
     letter-spacing: 1px;
